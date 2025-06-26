@@ -42,7 +42,10 @@ def plot_categorical_distributions(df, cat_cols, max_unique=40, top_n=20):
     For columns with >max_unique unique values, only the top_n most frequent are shown.
     """
     n = len(cat_cols)
-    fig, axes = plt.subplots((n + 2) // 3, 3, figsize=(15, 5 * ((n + 2) // 3)))
+    fig, axes = plt.subplots(
+    (n + 2) // 3, 3,
+    figsize=(15, 5 * ((n + 2) // 3))
+)
     axes = axes.flatten()
     for i, col in enumerate(cat_cols):
         value_counts = df[col].value_counts()
