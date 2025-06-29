@@ -168,7 +168,7 @@ def get_feature_engineering_pipeline(
     scaler = StandardScaler() if scaling == 'standard' else MinMaxScaler()
 
     # Encoding
-    encoder = OneHotEncoder(handle_unknown='ignore', sparse=False) if encoding == 'onehot' else 'passthrough'
+    encoder = OneHotEncoder(handle_unknown='ignore', sparse_output=False) if encoding == 'onehot' else 'passthrough'
 
     # ColumnTransformer
     preprocessor = ColumnTransformer([
