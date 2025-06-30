@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/tesfa/Desktop/Kiffiya AI/credit-risk-model/mlruns/0/models/m-8be165ee9c2d46a7b38e4d9af777ef02/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.11
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.0
+mlflow_version: 3.1.1
+model_id: m-8be165ee9c2d46a7b38e4d9af777ef02
+model_size_bytes: 1112
+model_uuid: m-8be165ee9c2d46a7b38e4d9af777ef02
+prompts: null
+run_id: 18fe18c0f1884df7af3d0b9bb8915afa
+utc_time_created: '2025-06-30 09:26:44.667671'
